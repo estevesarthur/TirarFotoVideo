@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/relative">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        tools:src="@tools:sample/avatars"/>
+    <VideoView
+        android:id="@+id/vvVideo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/relative"
+        app:layout_constraintStart_toStartOf="@id/relative"
+        app:layout_constraintEnd_toEndOf="@id/relative"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnTakePhoto"
+        android:text="Tirar foto"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnTakePhoto"
+        app:layout_constraintStart_toStartOf="@id/relative"
+        app:layout_constraintEnd_toEndOf="@id/relative"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnVideo"
+        android:text="Video"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnVideo"
+        app:layout_constraintStart_toStartOf="@id/relative"
+        app:layout_constraintEnd_toEndOf="@id/relative"
+        android:layout_marginTop="5dp"
+        android:id="@+id/btnSavePhoto"
+        android:text="salvar foto"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
